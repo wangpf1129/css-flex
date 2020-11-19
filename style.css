@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 3000px;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* 导航栏部分 */
+header {
+  background-color: #ccc;
+  color: #595656;
+  display: flex;
+  padding: .5em;
+}
+
+.logo>img {
+  height: 26px;
+
+  vertical-align: middle;
+}
+
+ul {
+  display: flex;
+  justify-content: flex-end;
+  flex: 1;
+}
+
+ul>li {
+  padding: 0 .5em;
+  cursor: pointer;
+}
+
+
+/* 主体部分 */
+section {
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  height: 500px;
+  display: flex;
+}
+
+aside {
+  background-color: #999;
+  flex: 1;
+}
+
+main {
+  background-color: #ccc;
+  flex: 2;
+}
+
+.ad {
+  flex: 1;
+  background-color: #666;
+}
+
+
+.imageList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 1200px;
+  margin: 30px auto 0;
+}
+
+.imageList .image {
+  background-color: #666;
+  margin-top: 30px;
+  height: 279px;
+  width: 279px;
+}
+
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+  height: 200px;
+  margin: 30px auto 0;
+}
+
+.left {
+  background-color: #999;
+  flex: 1;
+  margin-right: 220px;
+}
+
+.right {
+  background-color: #333;
+  flex: 2;
+}
