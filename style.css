@@ -13,30 +13,29 @@ ol {
   list-style: none;
 }
 
-.clearfix::after {
-  content: '';
-  display: block;
-  clear: both;
-}
 
 /* 导航栏部分 */
 header {
   background-color: #ccc;
   color: #595656;
   display: flex;
-  padding: .5em;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
 }
 
 .logo>img {
   height: 26px;
-
   vertical-align: middle;
 }
 
 ul {
   display: flex;
-  justify-content: flex-end;
-  flex: 1;
 }
 
 ul>li {
@@ -72,16 +71,23 @@ main {
 
 
 .imageList {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+
   width: 1200px;
   margin: 30px auto 0;
+  outline: 1px solid blue;
+}
+
+.imageList>.x {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -28px;
 }
 
 .imageList .image {
+  border: 1px solid red;
   background-color: #666;
-  margin-top: 30px;
+  margin-right: 28px;
+  margin-bottom: 20px;
   height: 279px;
   width: 279px;
 }
